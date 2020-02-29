@@ -58,7 +58,16 @@ function goToSearchPage(th) {
 }
 
 $(document).ready(function(){
-    $(".top-bar>.register-login").show();
+    // 网页刷新时即检测用户的登录状态
+    $.get("/api/v1/session", function (resp) {
+        if(resp.errno=="0"){
+            $(".top-bar>.user-info>.user-name").html(resp.data.name);
+            $(".top-bar>.user-info").show();
+        }else{
+            $(".top-bar>.register-login").show();
+        }
+    }, "json");
+
     var mySwiper = new Swiper ('.swiper-container', {
         loop: true,
         autoplay: 2000,
@@ -84,4 +93,4 @@ $(document).ready(function(){
         var date = $(this).datepicker("getFormattedDate");
         $("#start-date-input").val(date);
     });
-})
+});

@@ -22,7 +22,29 @@ $(document).ready(function() {
         if (!passwd) {
             $("#password-err span").html("请填写密码!");
             $("#password-err").show();
-            return;
         }
+        var data={
+            mobile:mobile,
+            password:passwd
+        };
+        var jsonData = JSON.stringify(data);
+        $.ajax({
+            url:"/api/v1/sessions",
+            type:"post",
+            data:jsonData,
+            contentType:"application/json",
+            dataType:"json",
+            headers:{
+                "X-CSRFToekn":getCookie("csrf_token")
+            },
+            success:function (data) {
+                if (data.errno=="0"){
+                    location.href="/"
+                }else{
+                    $("#password-err span").html(data.errmsg);
+                    $("#password-err").show()
+                }
+            }
+        })
     });
-})
+});

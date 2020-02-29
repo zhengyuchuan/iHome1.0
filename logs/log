@@ -1,388 +1,111 @@
 INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113  * Restarting with stat
-WARNING _internal.py:113  * Debugger is active!
-INFO _internal.py:113  * Debugger PIN: 465-258-414
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 10:21:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /api/v1/image_codes/4548348c-d8f3-4e87-a998-16e36d993a7d HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:34:42] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
 INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-ERROR app.py:1890 Exception on /api/v1.0/ [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 10:27:19] "[35m[1mGET /api/v1.0/ HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /api_1/ [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 10:28:35] "[35m[1mGET /api_1/ HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /api_1 [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 10:29:50] "[35m[1mGET /api_1 HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on / [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 10:31:05] "[35m[1mGET / HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /api_1 [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
-    self.redis.setex(name=self.key_prefix + session.sid, value=val,
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
-    return self.execute_command('SETEX', name, time, value)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
-    return self.finalize_request(rv)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
-    self.redis.setex(name=self.key_prefix + session.sid, value=val,
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
-    return self.execute_command('SETEX', name, time, value)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
-    sock = self._connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
-    raise err
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
-    sock.connect(socket_address)
-TimeoutError: [Errno 60] Operation timed out
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
-    self.redis.setex(name=self.key_prefix + session.sid, value=val,
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
-    return self.execute_command('SETEX', name, time, value)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
-    conn = self.connection or pool.get_connection(command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
-    connection.connect()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
-    raise ConnectionError(self._error_message(e))
-redis.exceptions.ConnectionError: Error 60 connecting to 192.168.1.4:6379. Operation timed out.
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 10:33:36] "[35m[1mGET /api_1 HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /api/v1/image_codes/5fbf44b5-6649-4eb3-a7a6-3a76b0409d3c HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:54] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:56] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:57] "[37mGET /api/v1/image_codes/71fa44f5-ec9d-40aa-b1b8-db1337165023 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:36:57] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:37:12] "[37mGET /api/v1/sms_codes/15698208195?image_code=7f56&image_code_id=71fa44f5-ec9d-40aa-b1b8-db1337165023 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:37:51] "[37mPOST /api/v1/users HTTP/1.1[0m" 200 -
 INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 11:17:24] "[33mGET / HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 11:17:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 11:17:32] "[33mGET /api/v1.0/ HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 11:17:38] "[33mGET / HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 11:17:42] "[33mGET /api HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 11:17:46] "[33mGET /api/ HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 11:18:04] "[32mGET /api_1 HTTP/1.1[0m" 308 -
-INFO _internal.py:113 127.0.0.1 - - [26/Feb/2020 11:18:04] "[37mGET /api_1/ HTTP/1.1[0m" 200 -
-ERROR __init__.py:97 Error: Path doesn't exist: 'migrations'.  Please use the 'init' command to create a new scripts folder.
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:03] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:03] "[37mGET /api/v1/image_codes/6ed3836a-100b-41ab-80fd-a5134f108924 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:03] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:07] "[36mGET /register.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:08] "[37mGET /api/v1/image_codes/39aff440-d127-45a7-b357-db120cc84ec3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:08] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mPOST /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 14:39:31] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
 INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-ERROR app.py:1890 Exception on / [GET]
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR passport.py:103 'NoneType' object has no attribute 'decode'
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:23:22] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+ERROR passport.py:103 'NoneType' object has no attribute 'decode'
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:36:23] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:37:57] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:40:26] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:40:28] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:40:29] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:40:30] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:40:31] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:40:31] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:40:35] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:41:03] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:42:54] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:43:13] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:15] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:16] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:44:29] "[31m[1mPOST /api/vi/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:49:19] "[31m[1mPOST /api/vi/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:49:45] "[31m[1mPOST /api/vi/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:51:27] "[31m[1mPOST /api/vi/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:51:28] "[31m[1mPOST /api/vi/sessions HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:33] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:52:44] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/sessions [POST]
 Traceback (most recent call last):
   File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -396,13 +119,11 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/web_html.py", line 15, in get_html
-    return html.send_static_file(file_name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/helpers.py", line 1077, in send_static_file
-    raise RuntimeError("No static folder for this object")
-RuntimeError: No static folder for this object
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:28:26] "[35m[1mGET / HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /favicon.ico [GET]
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/passport.py", line 86, in login
+    mobile = req_json.get("mobile")
+AttributeError: 'NoneType' object has no attribute 'get'
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:53:06] "[35m[1mPOST /api/v1/sessions HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /api/v1/sessions [POST]
 Traceback (most recent call last):
   File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -416,13 +137,12 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/web_html.py", line 15, in get_html
-    return html.send_static_file(file_name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/helpers.py", line 1077, in send_static_file
-    raise RuntimeError("No static folder for this object")
-RuntimeError: No static folder for this object
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:28:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /index.html [GET]
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/passport.py", line 86, in login
+    mobile = req_json.get("mobile")
+AttributeError: 'NoneType' object has no attribute 'get'
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:53:07] "[35m[1mPOST /api/v1/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1890 Exception on /api/v1/sessions [POST]
 Traceback (most recent call last):
   File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -436,13 +156,12 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/web_html.py", line 15, in get_html
-    return html.send_static_file(file_name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/helpers.py", line 1077, in send_static_file
-    raise RuntimeError("No static folder for this object")
-RuntimeError: No static folder for this object
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:28:32] "[35m[1mGET /index.html HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /favicon.ico [GET]
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/passport.py", line 87, in login
+    mobile = req_json.get("mobile")
+AttributeError: 'NoneType' object has no attribute 'get'
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 19:55:39] "[35m[1mPOST /api/v1/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1890 Exception on /api/v1/sessions [POST]
 Traceback (most recent call last):
   File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
     response = self.full_dispatch_request()
@@ -456,899 +175,110 @@ Traceback (most recent call last):
     rv = self.dispatch_request()
   File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
     return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/web_html.py", line 15, in get_html
-    return html.send_static_file(file_name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/helpers.py", line 1077, in send_static_file
-    raise RuntimeError("No static folder for this object")
-RuntimeError: No static folder for this object
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:28:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/passport.py", line 86, in login
+    mobile = req_dict.get("mobile")
+AttributeError: 'NoneType' object has no attribute 'get'
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:22] "[35m[1mPOST /api/v1/sessions HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:48] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:57] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:58] "[37mGET /detail.html?id=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:58] "[37mGET /static/css/ihome/detail.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:58] "[37mGET /static/images/landlord01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:58] "[37mGET /static/js/ihome/detail.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:58] "[37mGET /static/images/houseicon_sprite.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:58] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:05:58] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:06:00] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:06:32] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:06:48] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
 INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-ERROR app.py:1890 Exception on / [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/web_html.py", line 15, in get_html
-    return html.send_static_file(file_name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/helpers.py", line 1077, in send_static_file
-    raise RuntimeError("No static folder for this object")
-RuntimeError: No static folder for this object
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:29:17] "[35m[1mGET / HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /favicon.ico [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/web_html.py", line 15, in get_html
-    return html.send_static_file(file_name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/helpers.py", line 1077, in send_static_file
-    raise RuntimeError("No static folder for this object")
-RuntimeError: No static folder for this object
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:29:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:39:05] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:39:05] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:39:05] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:39:08] "[37mDELETE /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:39:09] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:05] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[33mGET /api/v1/session HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:14] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:40:33] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
 INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[37mGET / HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /css/reset.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /css/ihome/main.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /css/ihome/index.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /images/logo@128x59.png HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /images/home01.jpg HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /js/jquery.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /js/template.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /js/ihome/index.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /images/home02.jpg HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:42] "[33mGET /images/home03.jpg HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:32:43] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[33mGET /plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[33mGET /plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[33mGET /css/reset.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[33mGET /css/ihome/main.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[33mGET /css/ihome/register.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[33mGET /images/logo@128x59.png HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[33mGET /js/jquery.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:32] "[33mGET /plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:33:33] "[33mGET /js/ihome/register.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:49] "[37mGET /index.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /css/reset.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /css/ihome/main.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /css/ihome/index.css HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /js/jquery.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /js/template.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /js/ihome/index.js HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /images/logo@128x59.png HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /images/home01.jpg HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /images/home02.jpg HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:34:50] "[33mGET /images/home03.jpg HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /index.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:16] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:37:58] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:02] "[36mGET /index.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:02] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:02] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:15] "[37mGET /index.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:22] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:23] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:38:32] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:40:05] "[33mGET /index.html HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:40:05] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:41:01] "[37mGET /index.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:41:02] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:41:02] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:41:14] "[33mGET /staticegister.html HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:41:17] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /index.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:55] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 20:42:56] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /index.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:15:51] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:21:16] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:21:17] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [27/Feb/2020 22:21:17] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[37mGET / HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[36mGET /static/css/reset.css HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[36mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[36mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[36mGET /static/css/ihome/main.css HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[36mGET /static/css/ihome/index.css HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[36mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:31] "[36mGET /static/images/logo@128x59.png HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/images/home01.jpg HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/js/jquery.min.js HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/js/ihome/index.js HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/images/home02.jpg HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/images/home03.jpg HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/js/template.js HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:32] "[36mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:38] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:38] "[36mGET /static/css/ihome/register.css HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:34:38] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:35:22] "[36mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:08] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:08] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-ERROR app.py:1890 Exception on /api/v1/image_codes/072400f3-5793-4b90-838d-3b590293c5c7 [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/verify_code.py", line 19, in get_image_code
-    name, text, image_data = captcha.generate_captcha()
-NameError: name 'captcha' is not defined
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[35m[1mGET /api/v1/image_codes/072400f3-5793-4b90-838d-3b590293c5c7 HTTP/1.1[0m" 500 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:38:32] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:40:41] "[36mGET /register.html HTTP/1.1[0m" 304 -
-ERROR app.py:1890 Exception on /api/v1/image_codes/42b9722e-6062-405c-91f4-3d855b212b4b [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/PIL/ImageFile.py", line 496, in _save
-    fh = fp.fileno()
-io.UnsupportedOperation: fileno
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/verify_code.py", line 19, in get_image_code
-    name, text, image_data = captcha.generate_captcha()
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/captcha/captcha.py", line 223, in generate_captcha
-    return self.captcha("")
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/captcha/captcha.py", line 216, in captcha
-    image.save(out, format=fmt)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/PIL/Image.py", line 2102, in save
-    save_handler(self, fp, filename)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/PIL/JpegImagePlugin.py", line 766, in _save
-    ImageFile._save(im, fp, [("jpeg", (0, 0) + im.size, 0, rawmode)], bufsize)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/PIL/ImageFile.py", line 511, in _save
-    fp.write(d)
-TypeError: string argument expected, got 'bytes'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:40:42] "[35m[1mGET /api/v1/image_codes/42b9722e-6062-405c-91f4-3d855b212b4b HTTP/1.1[0m" 500 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 11:40:42] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 12:11:47] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 12:11:48] "[37mGET /api/v1/image_codes/300369b3-a1bf-4ed4-82fe-3ca5f16c6d54 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 12:11:48] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:24:53] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:24:54] "[37mGET /api/v1/image_codes/ea05ef55-37de-4d0c-b2d1-52267a6609ed HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:24:54] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:25:11] "[33mGET /api/smscode?mobile=17100000000&code=mpt9&codeId= HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:30:13] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:30:13] "[37mGET /api/v1/image_codes/86e91907-452c-42e4-bf90-4ff1d1422159 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:30:13] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:31:38] "[33mGET /sms_codes/17100000000/?image_code=urmb&image_code_id=86e91907-452c-42e4-bf90-4ff1d1422159 HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:33:09] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:33:09] "[37mGET /api/v1/image_codes/ae014436-3ae4-4d1c-a2f2-f65c165c9cef HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:33:10] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:34:21] "[33mGET /api/v1/sms_codes/17100000000/?image_code=qkvt&image_code_id=ae014436-3ae4-4d1c-a2f2-f65c165c9cef HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:34:28] "[33mGET /api/v1/sms_codes/17100000000?image_code=qkvt&image_code_id=ae014436-3ae4-4d1c-a2f2-f65c165c9cef HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:34:29] "[33mGET /api/v1/sms_codes/17100000000?image_code=qkvt&image_code_id=ae014436-3ae4-4d1c-a2f2-f65c165c9cef HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:37:30] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:37:30] "[37mGET /api/v1/image_codes/d145f988-5c96-414c-b4df-8b09dd6a87a2 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:37:30] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:39:10] "[33mGET /api/v1/sms_codes/17100000000?image_code=jmnd&image_code_id=d145f988-5c96-414c-b4df-8b09dd6a87a2 HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:40:30] "[33mGET /api/v1/sms_codes/17100000000?image_code=jmnd&image_code_id=d145f988-5c96-414c-b4df-8b09dd6a87a2 HTTP/1.1[0m" 404 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:41:37] "[33mGET /api/v1/sms_codes/17100000000?image_code=jmnd&image_code_id=d145f988-5c96-414c-b4df-8b09dd6a87a2 HTTP/1.1[0m" 404 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-ERROR app.py:1890 Exception on /api/v1/sms_codes/17100000000 [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/verify_code.py", line 55, in get_sms_code
-    if real_image_code.lower() != image_code.lower():
-AttributeError: 'NoneType' object has no attribute 'lower'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:41:54] "[35m[1mGET /api/v1/sms_codes/17100000000?image_code=jmnd&image_code_id=d145f988-5c96-414c-b4df-8b09dd6a87a2 HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /api/v1/sms_codes/17100000000 [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/verify_code.py", line 55, in get_sms_code
-    if real_image_code.lower() != image_code.lower():
-AttributeError: 'NoneType' object has no attribute 'lower'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:42:09] "[35m[1mGET /api/v1/sms_codes/17100000000?image_code=jmnd&image_code_id=d145f988-5c96-414c-b4df-8b09dd6a87a2 HTTP/1.1[0m" 500 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-ERROR app.py:1890 Exception on /api/v1/sms_codes/17100000000 [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
-    response = self.full_dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
-    rv = self.handle_user_exception(e)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
-    reraise(exc_type, exc_value, tb)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
-    raise value
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
-    rv = self.dispatch_request()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
-    return self.view_functions[rule.endpoint](**req.view_args)
-  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/verify_code.py", line 56, in get_sms_code
-    if real_image_code.lower() != image_code.lower():
-AttributeError: 'NoneType' object has no attribute 'lower'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:45:27] "[35m[1mGET /api/v1/sms_codes/17100000000?image_code=jmnd&image_code_id=d145f988-5c96-414c-b4df-8b09dd6a87a2 HTTP/1.1[0m" 500 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:46:11] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:46:12] "[37mGET /api/v1/image_codes/b41bb07e-b50c-4724-8909-0f055979639e HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:46:12] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:47:36] "[37mGET /api/v1/sms_codes/17100000000?image_code=hyra&image_code_id=b41bb07e-b50c-4724-8909-0f055979639e HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:48:39] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:48:39] "[37mGET /api/v1/image_codes/d52eb689-03ac-49ce-a683-f239bcfd4b87 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:48:39] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:49:42] "[37mGET /api/v1/sms_codes/17100000000?image_code=qdsy&image_code_id=d52eb689-03ac-49ce-a683-f239bcfd4b87 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:52:07] "[37mGET /api/v1/sms_codes/17100000000?image_code=qdsy&image_code_id=d52eb689-03ac-49ce-a683-f239bcfd4b87 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /api/v1/image_codes/77324cd6-49ef-4167-a489-c37ba8b628f7 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:53:16] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:55:27] "[37mGET /api/v1/sms_codes/17100000000?image_code=nudv&image_code_id=77324cd6-49ef-4167-a489-c37ba8b628f7 HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:58:12] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:58:13] "[37mGET /api/v1/image_codes/b9add677-6433-4c7e-883f-a21bcea0f385 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:58:13] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-ERROR verify_code.py:49 'bytes' object has no attribute 'encode'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 19:59:37] "[37mGET /api/v1/sms_codes/17100000000?image_code=qgvb&image_code_id=b9add677-6433-4c7e-883f-a21bcea0f385 HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-ERROR app.py:1890 Exception on /register.html [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:13:27] "[35m[1mGET /register.html HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /favicon.ico [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:13:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /register.html [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:13:31] "[35m[1mGET /register.html HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /favicon.ico [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:13:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /register.html [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:13:32] "[35m[1mGET /register.html HTTP/1.1[0m" 500 -
-ERROR app.py:1890 Exception on /favicon.ico [GET]
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-ERROR app.py:1974 Request finalizing failed with an error while handling an error
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
-    ctx.push()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
-    self.session = session_interface.open_session(self.app, self.request)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
-    val = self.redis.get(self.key_prefix + sid)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
-    return self.execute_command('GET', name)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 878, in execute_command
-    return self.parse_response(conn, command_name, **options)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 892, in parse_response
-    response = connection.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 734, in read_response
-    response = self._parser.read_response()
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 358, in read_response
-    response = self.encoder.decode(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 129, in decode
-    value = value.decode(self.encoding, self.encoding_errors)
-UnicodeDecodeError: 'utf-8' codec can't decode byte 0x80 in position 0: invalid start byte
-
-During handling of the above exception, another exception occurred:
-
-Traceback (most recent call last):
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
-    response = self.process_response(response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
-    self.session_interface.save_session(self, ctx.session, response)
-  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
-    if session.modified:
-AttributeError: 'NoneType' object has no attribute 'modified'
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:13:32] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:15:18] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:15:19] "[37mGET /api/v1/image_codes/cbb57caf-bb2a-4950-b918-356f175c592e HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:15:19] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 20:17:03] "[37mGET /api/v1/sms_codes/17100000000?image_code=xrmc&image_code_id=cbb57caf-bb2a-4950-b918-356f175c592e HTTP/1.1[0m" 200 -
-INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:14] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:30:15] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:11] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:11] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:32] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:32] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:32] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:32] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:32] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:32] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:32] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:33] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:33] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:33] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:33] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:31:33] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /api/v1/image_codes/64c013e3-f3db-46a4-95a8-8dc7975a1f90 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:32:46] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /api/v1/image_codes/d94fbe4b-7e9a-44f7-a266-eadf62205fdd HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:24] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:34:43] "[37mGET /api/v1/sms_codes/15698208195?image_code=fygt&image_code_id= HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /api/v1/image_codes/ca2dc704-e4bc-4829-88b5-3fc21bc036dc HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:32] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:36:51] "[37mGET /api/v1/sms_codes/15698208195?image_code=sp9t&image_code_id= HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /api/v1/image_codes/0b5cf1be-b1f9-46a3-835c-6644e5e34526 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:08] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:58] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:58] "[37mGET /api/v1/image_codes/807ce3a5-ed1f-48f4-bb5a-d17e543a7b84 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:39:58] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:40:00] "[37mGET /api/v1/image_codes/769d63dd-bb15-4a47-8caa-74962041525e HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:40:02] "[37mGET /api/v1/image_codes/4d9674d0-6088-499e-a01b-7ad0172e5643 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /api/v1/image_codes/28feb677-6745-4fc3-be65-b3eb47c5d9e9 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:43:20] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:45:59] "[37mGET /api/v1/sms_codes/15698208195?image_code=y3qz&image_code_id= HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:52:25] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:52:25] "[37mGET /api/v1/image_codes/dd466301-5f73-4ac2-bb16-9342f61c91b5 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:52:25] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:25] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /api/v1/image_codes/2d3be3f3-04fa-4592-9d56-e1781cc972bb HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:26] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /api/v1/image_codes/733feb97-38d1-4d28-b592-337dbbe77315 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:54:42] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /api/v1/image_codes/ef747c4e-ce50-4cc7-81fa-1a575ca5b1ef HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:36] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:49] "[36mGET /register.html HTTP/1.1[0m" 304 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:50] "[37mGET /api/v1/image_codes/6e1c478e-5550-465e-9011-8bfb96c0f98f HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:56:50] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:57:12] "[37mGET /api/v1/sms_codes/15698208195?image_code=azar&image_code_id=6e1c478e-5550-465e-9011-8bfb96c0f98f HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /register.html HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /api/v1/image_codes/ef5ee9a1-a386-428b-ac1c-352c00afd43d HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
-INFO _internal.py:113 127.0.0.1 - - [28/Feb/2020 21:58:36] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:05] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:08] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:08] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:08] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:12] "[37mDELETE /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:12] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:12] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:12] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -

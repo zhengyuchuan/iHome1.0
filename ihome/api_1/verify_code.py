@@ -44,7 +44,8 @@ def get_sms_code(mobile):
         return jsonify(errno=RET.PARAMERR, errmsg='参数不完整')
     # 从redis中取出真实的图片验证码，进行对比
     try:
-        real_image_code = redis_store.get("image_code_%s" % image_code_id).decode("utf-8")
+        real_image_code = redis_store.get("image_code_%s" % image_code_id)
+        real_image_code = real_image_code.decode("utf-8")
     except Exception as E:
         current_app.logger.error(E)
         return jsonify(errno=RET.DBERR, errmsg="redis数据库异常")

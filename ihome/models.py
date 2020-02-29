@@ -1,5 +1,6 @@
 from datetime import datetime
 from . import db
+from . import constants
 from werkzeug.security import generate_password_hash,check_password_hash
 
 class BaseModel(object):
@@ -23,7 +24,7 @@ class User(BaseModel,db.Model):
 
     @property
     def password_hash(self):
-        raise AttributeError(u'不能访问该属性')
+        raise AttributeError('不能访问该属性')
 
     @password_hash.setter
     def password_hash(self,value):
