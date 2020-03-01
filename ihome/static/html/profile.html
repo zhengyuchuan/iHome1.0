@@ -29,7 +29,7 @@
                     <div class="menu-content">
                         <img id="user-avatar" src="">
                         <div class="menu-text">
-                            <form id="form-avatar" action="/api/profile/avatar" method="post" enctype="multipart/form-data">
+                            <form id="form-avatar" enctype="multipart/form-data">
                                 选择头像：<input type="file" accept="image/*" name="avatar">
                                 <input type="submit" class="btn btn-success" value="上传">
                             </form>
@@ -41,7 +41,7 @@
                         <h3>用户名</h3>
                     </div>
                     <div class="menu-content">
-                        <form id="form-name" action="/api/profile/name" method="post">
+                        <form id="form-name">
                             <input type="text" name="name" id="user-name">
                             <input type="submit" class="btn btn-success" value="保存">
                         </form>

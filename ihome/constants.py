@@ -13,3 +13,6 @@ LOGIN_ERROR_MAX_TIMES = 5
 # 尝试次数的过期时间
 LOGIN_ERROR_TIME = 600
 
+# 七牛域名
+QINIU_URL_DOMAIN = "http://q6gtzltin.bkt.clouddn.com/"
+

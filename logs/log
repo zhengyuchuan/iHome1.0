@@ -282,3 +282,306 @@ INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:12] "[37mDELETE /api/v1/
 INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:12] "[37mGET /index.html HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:12] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [29/Feb/2020 20:45:12] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:26] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:27] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:27] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:27] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:30] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:30] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:30] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:41] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:41] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:42] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:16:42] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:12] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:12] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:12] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:18] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:18] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:21] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:21] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:21] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:21] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/users/avatar [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/profile.py", line 18, in set_user_avatar
+    user_id = g.uer_id
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: '_AppCtxGlobals' object has no attribute 'uer_id'
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:23] "[35m[1mPOST /api/v1/users/avatar HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /api/v1/users/avatar [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/profile.py", line 18, in set_user_avatar
+    user_id = g.uer_id
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: '_AppCtxGlobals' object has no attribute 'uer_id'
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:18:40] "[35m[1mPOST /api/v1/users/avatar HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:20:27] "[36mGET /profile.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:20:27] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/users/avatar [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/profile.py", line 18, in set_user_avatar
+    user_id = g.user_id
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: '_AppCtxGlobals' object has no attribute 'uer_id'
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:20:33] "[35m[1mPOST /api/v1/users/avatar HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:20:54] "[37mPOST /api/v1/users/avatar HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:20:59] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:20:59] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:21:15] "[37mPOST /api/v1/users/avatar HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:21:17] "[31m[1mPOST /api/profile/name HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:21:23] "[31m[1mPOST /api/profile/name HTTP/1.1[0m" 405 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:21:23] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:22:23] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:22:23] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:22:32] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:22:32] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:27:23] "[36mGET /my.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:27:23] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:27:30] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:27:30] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:28:04] "[36mGET /index.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:28:04] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:28:04] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:28:04] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:19] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:19] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:19] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:19] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:19] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:19] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:19] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:51:20] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:53:33] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:54:35] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:56:25] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 20:59:05] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:00:44] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:28] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:29] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:29] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:29] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:29] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:29] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:29] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:02:29] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:13] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:14] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:14] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:18:14] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:19:58] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR profile.py:66 filter() got an unexpected keyword argument 'name'
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:20:04] "[37mPOST /api/v1/users/name HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mPOST /api/v1/users/name HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/images/home02.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /static/images/home03.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:21:24] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:35] "[36mGET / HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:35] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:35] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:35] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:37] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:37] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:37] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:44] "[37mPOST /api/v1/users/name HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:49] "[37mPOST /api/v1/users/name HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:49] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [01/Mar/2020 21:36:49] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
