@@ -39,22 +39,6 @@
                         <div class="form-group">
                             <label for="area-id">所在城区</label>
                             <select class="form-control" id="area-id" name="area_id">
-                              <option value="1">东城区</option>
-                              <option value="2">西城区</option>
-                              <option value="3">朝阳区</option>
-                              <option value="4">海淀区</option>
-                              <option value="5">昌平区</option>
-                              <option value="6">丰台区</option>
-                              <option value="7">房山区</option>
-                              <option value="8">通州区</option>
-                              <option value="9">顺义区</option>
-                              <option value="10">大兴区</option>
-                              <option value="11">怀柔区</option>
-                              <option value="12">平谷区</option>
-                              <option value="13">密云区</option>
-                              <option value="14">延庆区</option>
-                              <option value="15">石景山区</option>
-                              <option value="16">门头沟区</option>
                             </select>
                         </div>
                         <div class="form-group">
@@ -311,5 +295,11 @@
     <script src="/static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js"></script>
     <script src="/static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js"></script>
     <script src="/static/js/ihome/newhouse.js"></script>
+    <script src="/static/js/template.js"></script>
+    <script type="text/html" id="area-tmpl">
+        {{ each areas as area }}
+        <option value="{{ area.aid }}">{{ area.aname }}</option>
+        {{ /each }}
+    </script>
 </body>
 </html>

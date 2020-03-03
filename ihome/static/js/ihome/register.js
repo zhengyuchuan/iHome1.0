@@ -14,7 +14,7 @@ function generateUUID() {
     var uuid = 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
         var r = (d + Math.random()*16)%16 | 0;
         d = Math.floor(d/16);
-        return (c=='x' ? r : (r&0x3|0x8)).toString(16);
+        return (c==='x' ? r : (r&0x3|0x8)).toString(16);
     });
     return uuid;
 }
@@ -49,7 +49,7 @@ function sendSMSCode() {
         image_code_id:imageCodeId //
     };
     $.get("/api/v1/sms_codes/" + mobile, req_data, function (resp) {
-        if(resp.errno == '0'){
+        if(resp.errno === '0'){
             var num = 60;
             var timer = setInterval(function () {
                 if (num>1){
@@ -157,7 +157,7 @@ $(document).ready(function() {
                 "X-CSRFToken":getCookie("csrf_token")
             },
             success:function (resp) {
-                if(resp.errno == "0"){
+                if(resp.errno === "0"){
                     // 注册成功，跳转至主页
                     location.href = "/index.html"
                 }else{

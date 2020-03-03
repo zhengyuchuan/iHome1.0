@@ -48,7 +48,7 @@ function goToSearchPage(th) {
     url += ("aid=" + $(th).attr("area-id"));
     url += "&";
     var areaName = $(th).attr("area-name");
-    if (undefined == areaName) areaName="";
+    if (undefined === areaName) areaName="";
     url += ("aname=" + areaName);
     url += "&";
     url += ("sd=" + $(th).attr("start-date"));
@@ -60,7 +60,7 @@ function goToSearchPage(th) {
 $(document).ready(function(){
     // 网页刷新时即检测用户的登录状态
     $.get("/api/v1/session", function (resp) {
-        if(resp.errno=="0"){
+        if(resp.errno==="0"){
             $(".top-bar>.user-info>.user-name").html(resp.data.name);
             $(".top-bar>.user-info").show();
         }else{

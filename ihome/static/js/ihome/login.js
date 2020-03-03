@@ -38,7 +38,7 @@ $(document).ready(function() {
                 "X-CSRFToekn":getCookie("csrf_token")
             },
             success:function (data) {
-                if (data.errno=="0"){
+                if (data.errno==="0"){
                     location.href="/"
                 }else{
                     $("#password-err span").html(data.errmsg);

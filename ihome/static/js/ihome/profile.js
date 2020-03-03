@@ -23,7 +23,7 @@ $(document).ready(function () {
                 "X-CSRFToken":getCookie("csrf_token")
             },
             success:function (resp) {
-                if(resp.errno=="0"){
+                if(resp.errno==="0"){
                     // 上传成功
                     var avatar_url = resp.data.avatar_url;
                     $("#user-avatar").attr("src", avatar_url);
@@ -51,13 +51,13 @@ $(document).ready(function () {
             url:"/api/v1/users/name",
             data:data_json,
             contentType:"application/json",
-            type:"post",
+            type:"put",
             dataType:"json",
             headers:{
                 "X-CSRFToken":getCookie("csrf_token")
             },
             success:function (resp) {
-                if(resp.errno=="0"){
+                if(resp.errno==="0"){
                     // 上传成功
                     location.href="/"
                 }else {

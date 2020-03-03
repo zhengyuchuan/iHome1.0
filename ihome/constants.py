@@ -16,3 +16,6 @@ LOGIN_ERROR_TIME = 600
 # 七牛域名
 QINIU_URL_DOMAIN = "http://q6gtzltin.bkt.clouddn.com/"
 
+# 城区信息的缓存时间
+AREA_INFO_REDIS_CACHE_EXPIRES = 7200
+

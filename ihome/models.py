@@ -44,12 +44,13 @@ class User(BaseModel,db.Model):
             'avatar_url':self.avatar_url
         }
         if self.avatar_url:
-            user_info['avatar_url']=constants.QINIU_DOMIN_PREFIX + self.avatar_url
+            user_info['avatar_url']=constants.QINIU_URL_DOMAIN + self.avatar_url
         return user_info
 
     def to_auth_dict(self):
         """实名认证数据"""
         return {
+            "user_id":self.id,
             'real_name':self.real_name,
             'id_card':self.id_card
         }
@@ -64,6 +65,7 @@ class Area(BaseModel,db.Model):
     houses=db.relationship('House',backref='area') # 区域的房屋
 
     def to_dict(self):
+        """将对象转换为字典"""
         return {
             'aname':self.name,
             'aid':self.id
