@@ -54,7 +54,7 @@ $(document).ready(function(){
             }
         })
 
-    })
+    });
 
 
     // 保存房源图片

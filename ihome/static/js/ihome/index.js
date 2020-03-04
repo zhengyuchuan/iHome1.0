@@ -68,19 +68,34 @@ $(document).ready(function(){
         }
     }, "json");
 
-    var mySwiper = new Swiper ('.swiper-container', {
-        loop: true,
-        autoplay: 2000,
-        autoplayDisableOnInteraction: false,
-        pagination: '.swiper-pagination',
-        paginationClickable: true
-    }); 
-    $(".area-list a").click(function(e){
-        $("#area-btn").html($(this).html());
-        $(".search-btn").attr("area-id", $(this).attr("area-id"));
-        $(".search-btn").attr("area-name", $(this).html());
-        $("#area-modal").modal("hide");
+    //index获取房源信息，并以轮播图的方式展示
+    $.get("/api/v1/houses/index",function (resp) {
+        if (resp.errno==="0"){
+            $(".swiper-wrapper").html(template("swiper-houses-tmpl", {houses:resp.data}));
+
+            var mySwiper = new Swiper ('.swiper-container', {
+                loop: true,
+                autoplay: 2000,
+                autoplayDisableOnInteraction: false,
+                pagination: '.swiper-pagination',
+                paginationClickable: true
+            });
+        }
     });
+
+    $.get("/api/v1/areas",function (resp) {
+        if(resp.errno==="0"){
+            $(".area-list").html(template("area-list-tmpl", {areas:resp.data}));
+            $(".area-list a").click(function(e){
+                $("#area-btn").html($(this).html());
+                $(".search-btn").attr("area-id", $(this).attr("area-id"));
+                $(".search-btn").attr("area-name", $(this).html());
+                $("#area-modal").modal("hide");
+            })
+        }
+    });
+
+
     $('.modal').on('show.bs.modal', centerModals);      //当模态框出现的时候
     $(window).on('resize', centerModals);               //当窗口大小变化的时候
     $("#start-date").datepicker({

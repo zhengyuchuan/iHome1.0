@@ -119,11 +119,11 @@ class House(BaseModel,db.Model):
             "title": self.title,
             "price": self.price,
             "area_name": self.area.name,
-            "img_url": constants.QINIU_DOMIN_PREFIX + self.index_image_url if self.index_image_url else "",
+            "img_url": constants.QINIU_URL_DOMAIN + self.index_image_url if self.index_image_url else "",
             "room_count": self.room_count,
             "order_count": self.order_count,
             "address": self.address,
-            "user_avatar": constants.QINIU_DOMIN_PREFIX + self.user.avatar_url if self.user.avatar_url else "",
+            "user_avatar": constants.QINIU_URL_DOMAIN + self.user.avatar_url if self.user.avatar_url else "",
             "ctime": self.create_time.strftime("%Y-%m-%d")
         }
 
@@ -133,7 +133,7 @@ class House(BaseModel,db.Model):
             "hid": self.id,
             "user_id": self.user_id,
             "user_name": self.user.name,
-            "user_avatar": constants.QINIU_DOMIN_PREFIX + self.user.avatar_url if self.user.avatar_url else "",
+            "user_avatar": constants.QINIU_URL_DOMAIN + self.user.avatar_url if self.user.avatar_url else "",
             "title": self.title,
             "price": self.price,
             "address": self.address,
@@ -149,7 +149,7 @@ class House(BaseModel,db.Model):
         # 房屋图片
         img_urls = []
         for image in self.images:
-            img_urls.append(constants.QINIU_DOMIN_PREFIX + image.url)
+            img_urls.append(constants.QINIU_URL_DOMAIN + image.url)
         house_dict["img_urls"] = img_urls
 
         # 房屋设施
@@ -161,7 +161,7 @@ class House(BaseModel,db.Model):
         # 评论信息
         comments = []
         orders = Order.query.filter(Order.house_id == self.id, Order.status == "COMPLETE", Order.comment != None) \
-            .order_by(Order.update_time.desc()).limit(constants.HOUSE_DETAIL_COMMENT_DISPLAY_COUNTS)
+            .order_by(Order.update_time.desc()).limit(constants.HOUSE_DETAIL_COMMENT_COUNTS)
         for order in orders:
             comment = {
                 "comment": order.comment,  # 评论的内容
@@ -212,7 +212,7 @@ class Order(BaseModel, db.Model):
         return {
             "order_id": self.id,
             "title": self.house.title,
-            "img_url": constants.QINIU_DOMIN_PREFIX + self.house.index_image_url if self.house.index_image_url else "",
+            "img_url": constants.QINIU_URL_DOMAIN + self.house.index_image_url if self.house.index_image_url else "",
             "start_date": self.begin_date.strftime("%Y-%m-%d"),
             "end_date": self.end_date.strftime("%Y-%m-%d"),
             "ctime": self.create_time.strftime("%Y-%m-%d %H:%M:%S"),

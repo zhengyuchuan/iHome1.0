@@ -31,47 +31,35 @@
                     </div>
                 </li>
             </ul>
-            <ul id="houses-list" class="houses-list">
-                <li>
-                    <div class="new-house">
-                        <a href="/newhouse.html">发布新房源</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="/detail.html?id={{house.house_id}}&f=my">
-                        <div class="house-title">
-                            <h3>房屋ID:1 —— 房屋标题1</h3>
+            <ul id="houses-list" class="houses-list"></ul>
+
+                <script id="houses-list-tmpl" type="text/html">
+                    <li>
+                        <div class="new-house">
+                            <a href="/newhouse.html">发布新房源</a>
                         </div>
-                        <div class="house-content">
-                            <img src="/static/images/home01.jpg">
-                            <div class="house-text">
-                                <ul>
-                                    <li>位于：西城区</li>
-                                    <li>价格：￥200/晚</li>
-                                    <li>发布时间：2016-11-11 20:00:00</li>
-                                </ul>
-                            </div> 
-                        </div>
-                    </a>
-                </li>
-                <li>
-                    <a href="/detail.html?id={{house.house_id}}&f=my">
-                        <div class="house-title">
-                            <h3>房屋ID:1 —— 房屋标题1</h3>
-                        </div>
-                        <div class="house-content">
-                            <img src="/static/images/home01.jpg">
-                            <div class="house-text">
-                                <ul>
-                                    <li>位于：西城区</li>
-                                    <li>价格：￥200/晚</li>
-                                    <li>发布时间：2016-11-11 20:00:00</li>
-                                </ul>
-                            </div> 
-                        </div>
-                    </a>
-                </li>
-            </ul>
+                    </li>
+                    {{ each houses as house }}
+                    <li>
+                        <a href="/detail.html?id={{house.house_id}}">
+                            <div class="house-title">
+                                <h3>{{ house.title }}</h3>
+                            </div>
+                            <div class="house-content">
+                                <img src="{{ house.img_url }}">
+                                <div class="house-text">
+                                    <ul>
+                                        <li>位于：{{ house.area_name }}</li>
+                                        <li>价格：￥{{ (house.price/100.0).toFixed(0) }}/晚</li>
+                                        <li>发布时间：{{ house.ctime }}</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                    {{ /each }}
+                </script>
+
         </div>
         <div class="footer">
             <p><span><i class="fa fa-copyright"></i></span>爱家租房&nbsp;&nbsp;享受家的温馨</p>

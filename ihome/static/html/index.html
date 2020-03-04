@@ -25,19 +25,15 @@
         </div>
         <div class="swiper-container">
             <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <a href="/detail.html?id=1"><img src="/static/images/home01.jpg"></a>
-                    <div class="slide-title">房屋标题1</div>
-                </div>
-                <div class="swiper-slide">
-                    <a href="/detail.html?id=2"><img src="/static/images/home02.jpg"></a>
-                    <div class="slide-title">房屋标题2</div>
-                </div>
-                <div class="swiper-slide">
-                    <a href="/detail.html?id=3"><img src="/static/images/home03.jpg"></a>
-                    <div class="slide-title">房屋标题3</div>
-                </div>
             </div>
+            <script id="swiper-houses-tmpl" type="text/html">
+            {{ each houses as house }}
+                <div class="swiper-slide">
+                    <a href="/detail.html?id={{ house.house_id }}"><img src="{{ house.img_url }}"></a>
+                    <div class="slide-title">{{ house.title }}</div>
+                </div>
+            {{ /each }}
+            </script>
             <div class="swiper-pagination"></div>
         </div>
         <div class="search-bar">
@@ -54,23 +50,12 @@
                         </div>
                         <div class="modal-body">
                             <div class="area-list">
-                                <a href="#" area-id="1">东城区</a>
-                                <a href="#" area-id="2">西城区</a>
-                                <a href="#" area-id="3">朝阳区</a>
-                                <a href="#" area-id="4">海淀区</a>
-                                <a href="#" area-id="5">昌平区</a>
-                                <a href="#" area-id="6">丰台区</a>
-                                <a href="#" area-id="7">房山区</a>
-                                <a href="#" area-id="8">通州区</a>
-                                <a href="#" area-id="9">顺义区</a>
-                                <a href="#" area-id="10">大兴区</a>
-                                <a href="#" area-id="11">怀柔区</a>
-                                <a href="#" area-id="12">平谷区</a>
-                                <a href="#" area-id="13">密云区</a>
-                                <a href="#" area-id="14">延庆区</a>
-                                <a href="#" area-id="15">石景山区</a>
-                                <a href="#" area-id="16">门头沟区</a>
                             </div>
+                            <script id="area-list-tmpl" type="text/html">
+                                {{ each areas as area }}
+                                <a href="#" area-id="{{ area.aid }}">{{ area.aname }}</a>
+                                {{ /each }}
+                            </script>
                         </div>
                     </div>
                 </div>
