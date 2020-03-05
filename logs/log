@@ -744,3 +744,680 @@ INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 15:23:06] "[37mGET /static/css
 INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 15:23:06] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 15:23:06] "[33mGET /static/images/landlord01.jgp HTTP/1.1[0m" 404 -
 INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 15:23:06] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 17:25:58] "[37mGET /api/v1/houses HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR houses.py:348 int() argument must be a string, a bytes-like object or a number, not 'NoneType'
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 17:26:48] "[37mGET /api/v1/houses/list HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR houses.py:348 invalid literal for int() with base 10: ''
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:46:36] "[37mGET /api/v1/houses/list HTTP/1.1[0m" 200 -
+ERROR houses.py:348 invalid literal for int() with base 10: ''
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:48:20] "[37mGET /api/v1/houses/list HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:50:56] "[36mGET / HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:50:57] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:50:57] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:50:57] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:50:57] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:50:57] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:00] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:01] "[37mGET /myhouse.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:01] "[37mGET /static/css/ihome/myhouse.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:01] "[37mGET /static/js/ihome/myhouse.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:01] "[37mGET /api/v1/users/auth HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:01] "[37mGET /api/v1/user/houses HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:03] "[37mGET /newhouse.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:03] "[37mGET /static/css/ihome/newhouse.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:03] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:03] "[37mGET /static/js/ihome/newhouse.js HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:51:03] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:52:15] "[37mPOST /api/v1/houses/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:52:46] "[37mPOST /api/v1/houses/image HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:52:51] "[37mGET /api/v1/users/auth HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:52:51] "[37mGET /api/v1/user/houses HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:52:54] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:53:56] "[37mPOST /api/v1/houses/info HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:04] "[37mPOST /api/v1/houses/image HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:06] "[37mGET /api/v1/users/auth HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:06] "[37mGET /api/v1/user/houses HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:06] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:07] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:07] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:07] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:07] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:11] "[36mGET / HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:11] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:12] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:12] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:12] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:12] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:19] "[36mGET / HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:19] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:19] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:19] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:20] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:20] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:54:26] "[33mGET /static/images/landlord01.jgp HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:55:47] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:55:47] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:55:47] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:55:47] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:58:54] "[36mGET / HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:58:54] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:58:54] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:58:54] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:58:54] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 19:58:54] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:18] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:20] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:20] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:21] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:22] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:24] "[37mGET /api/v1/users/auth HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:24] "[37mGET /api/v1/user/houses HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:28] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:30] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:30] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:30] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:30] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:05:33] "[33mGET /static/images/landlord01.jgp HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:29:30] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:29:30] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:35:27] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:15] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:37] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:40:47] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:11] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:41:40] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:42:10] "[36mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:42:10] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:42:10] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:42:10] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:42:12] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:31] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:32] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:43:36] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:18] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:19] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:48:21] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:03] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:08] "[37mGET /api/v1/houses/search?aid=3&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:11] "[37mGET /api/v1/houses/search?aid=8&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:14] "[37mGET /api/v1/houses/search?aid=1&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:19] "[37mGET /api/v1/houses/search?aid=16&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:23] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:26] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=booking&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:28] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=price-inc&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:53:30] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 20:56:36] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:05] "[37mGET /detail.html?id=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:05] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:05] "[37mGET /static/css/ihome/detail.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:05] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:05] "[37mGET /static/js/ihome/detail.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:05] "[37mGET /api/v1/houses/2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:05] "[37mGET /static/images/houseicon_sprite.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:05] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:13] "[37mGET /booking.html?hid=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:13] "[37mGET /static/css/ihome/booking.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:13] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:13] "[37mGET /static/js/ihome/booking.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:15] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:30] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:31] "[37mGET /detail.html?id=3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:31] "[37mGET /api/v1/houses/3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:31] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:34] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:35] "[37mGET /detail.html?id=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:36] "[37mGET /api/v1/houses/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:02:36] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /detail.html?id=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/css/ihome/detail.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/js/ihome/detail.js HTTP/1.1[0m" 200 -
+INFO houses.py:285 hit house info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /api/v1/houses/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[37mGET /static/images/houseicon_sprite.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:27] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:28] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:36] "[37mGET /search.html?aid=&aname=&sd=&ed= HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /static/css/ihome/search.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /static/js/ihome/search.js HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /api/v1/houses/search?aid=&sd=&ed=&sk=new&p=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:37] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:39] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:39] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:39] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:49] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:49] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:49] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:49] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:49] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:51] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO houses.py:285 hit house info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:05:51] "[37mGET /api/v1/houses/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:06:02] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:06:06] "[37mGET /detail.html?id=2 HTTP/1.1[0m" 200 -
+INFO houses.py:285 hit house info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:06:06] "[37mGET /api/v1/houses/2 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:06:06] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:46] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:48] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:48] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:48] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:48] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:52] "[37mGET /myhouse.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:52] "[37mGET /static/css/ihome/myhouse.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:52] "[37mGET /static/js/ihome/myhouse.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:52] "[37mGET /api/v1/users/auth HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:07:53] "[37mGET /api/v1/user/houses HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:38] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:39] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:39] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:39] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:39] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:41] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:42] "[37mDELETE /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:42] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:42] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:42] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:42] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:42] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:43] "[37mGET /register.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:43] "[37mGET /static/css/ihome/register.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:43] "[37mGET /static/js/ihome/register.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:22:44] "[37mGET /api/v1/image_codes/5803a37a-a1fe-4852-bf3a-df552bfefb6d HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:23:09] "[37mGET /api/v1/sms_codes/15698208190?image_code=hqx5&image_code_id=5803a37a-a1fe-4852-bf3a-df552bfefb6d HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:23:53] "[37mPOST /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:23:53] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:23:53] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:23:53] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:23:53] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:01] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:04] "[37mGET /profile.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:04] "[37mGET /static/css/ihome/profile.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:04] "[37mGET /static/js/jquery.form.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:04] "[37mGET /static/js/ihome/profile.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:06] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:08] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:08] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:08] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:08] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO houses.py:285 hit house info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:09] "[37mGET /api/v1/houses/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:24:09] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:25:22] "[37mGET /booking.html?hid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:25:22] "[37mGET /static/css/ihome/booking.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:25:22] "[37mGET /static/js/ihome/booking.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:25:22] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /booking.html?hid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/css/ihome/booking.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/js/ihome/booking.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:44] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:29:45] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /booking.html?hid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/css/ihome/booking.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/js/ihome/booking.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:285 hit house info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /api/v1/houses/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:19] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:32:23] "[31m[1mPOST /api/v1/orders HTTP/1.1[0m" 405 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /booking.html?hid=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/css/ihome/booking.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/js/ihome/booking.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/images/home01.jpg HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO houses.py:285 hit house info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /api/v1/houses/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:21] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:28] "[37mPOST /api/v1/orders HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:28] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:28] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:28] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:28] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:28] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:35] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:35] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:35] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:36] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:37] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:39] "[37mDELETE /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:39] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:40] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:40] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:40] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:40] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:41] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:41] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:41] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:49] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:49] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:49] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:49] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:49] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:51] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:35:53] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:10] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:11] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:11] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:11] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:11] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:48] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:48] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:48] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:48] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:52] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:53] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:54] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:56] "[37mDELETE /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:56] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:56] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:56] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:56] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:56] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:57] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:57] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:37:57] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:05] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:05] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:05] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:05] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:05] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:07] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:09] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:11] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:13] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:16] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:19] "[37mGET /myhouse.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:19] "[37mGET /static/css/ihome/myhouse.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:19] "[37mGET /static/js/ihome/myhouse.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:19] "[37mGET /api/v1/users/auth HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:19] "[37mGET /api/v1/user/houses HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:20] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:21] "[37mGET /lorders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:21] "[33mGET /%7B%7Border.img_url%7D%7D HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:38:21] "[37mGET /static/js/ihome/lorders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:48:03] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:34] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:34] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:34] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:34] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:35] "[37mGET /detail.html?id=1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:35] "[37mGET /static/css/ihome/detail.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:35] "[37mGET /static/js/ihome/detail.js HTTP/1.1[0m" 200 -
+INFO houses.py:285 hit house info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:35] "[37mGET /api/v1/houses/1 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:35] "[37mGET /static/images/houseicon_sprite.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:35] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:38] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:39] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:51:41] "[33mGET /%7B%7Border.img_url%7D%7D HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:53:28] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:54] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:56] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:56:58] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:00] "[37mGET /myhouse.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:00] "[37mGET /static/css/ihome/myhouse.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:00] "[37mGET /static/js/ihome/myhouse.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:00] "[37mGET /api/v1/users/auth HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:00] "[37mGET /api/v1/user/houses HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:02] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:03] "[37mGET /lorders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:03] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:03] "[37mGET /static/js/ihome/lorders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:03] "[37mGET /api/v1/user/orders?role=landlord HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:08] "[37mPUT /api/v1/orders/1/status HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:11] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:15] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:15] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:15] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:15] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:15] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:17] "[37mDELETE /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:17] "[37mGET /index.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:18] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:18] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:18] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:18] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:19] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:19] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:19] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:29] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:29] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:29] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:29] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:29] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:31] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:33] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:33] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:33] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:35] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:37] "[37mGET /api/v1/users/auth HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:39] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:40] "[37mGET /api/v1/user/orders?role=landlord HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:42] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:44] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:46] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:48] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:48] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:48] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:48] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -

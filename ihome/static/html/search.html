@@ -44,22 +44,6 @@
                     </div>
                 </div>
                 <ul class="filter-item filter-area">
-                    <li area-id="1">东城区</li>
-                    <li area-id="2">西城区</li>
-                    <li area-id="3">朝阳区</li>
-                    <li area-id="4">海淀区</li>
-                    <li area-id="5">昌平区</li>
-                    <li area-id="6">丰台区</li>
-                    <li area-id="7">房山区</li>
-                    <li area-id="8">通州区</li>
-                    <li area-id="9">顺义区</li>
-                    <li area-id="10">大兴区</li>
-                    <li area-id="11">怀柔区</li>
-                    <li area-id="12">平谷区</li>
-                    <li area-id="13">密云区</li>
-                    <li area-id="14">延庆区</li>
-                    <li area-id="15">石景山区</li>
-                    <li area-id="16">门头沟区</li>
                 </ul>
                 <ul class="filter-item filter-sort">
                     <li class="active" sort-key="new">最新上线</li>
@@ -71,40 +55,22 @@
         </div>
         <div class="display-mask"></div>
         <ul class="house-list">
-            <li class="house-item">
-                <a href="/detail.html?id=1"><img src="/static/images/home01.jpg"></a>
-                <div class="house-desc">
-                    <div class="landlord-pic"><img src="/static/images/landlord01.jgp"></div>
-                    <div class="house-price">￥<span>200</span>/晚</div>
-                    <div class="house-intro">
-                        <span class="house-title">房屋标题1</span>
-                        <em>出租6间 - 1次入住 - 中关村软件园</em>
-                    </div>
-                </div>
-            </li>
-            <li class="house-item">
-                <a href="/detail.html?id=1"><img src="/static/images/home01.jpg"></a>
-                <div class="house-desc">
-                    <div class="landlord-pic"><img src="/static/images/landlord01.jgp"></div>
-                    <div class="house-price">￥<span>200</span>/晚</div>
-                    <div class="house-intro">
-                        <span class="house-title">房屋标题1</span>
-                        <em>出租6间 - 1次入住 - 中关村软件园</em>
-                    </div>
-                </div>
-            </li>
-            <li class="house-item">
-                <a href="/detail.html?id=1"><img src="/static/images/home01.jpg"></a>
-                <div class="house-desc">
-                    <div class="landlord-pic"><img src="/static/images/landlord01.jgp"></div>
-                    <div class="house-price">￥<span>200</span>/晚</div>
-                    <div class="house-intro">
-                        <span class="house-title">房屋标题1</span>
-                        <em>出租6间 - 1次入住 - 中关村软件园</em>
-                    </div>
-                </div>
-            </li>
         </ul>
+        <script id="house-list-tmpl" type="text/html">
+            {{each houses as house}}
+            <li class="house-item">
+                <a href="/detail.html?id={{house.house_id}}"><img src="{{house.img_url}}"></a>
+                <div class="house-desc">
+                    <div class="landlord-pic"><img src="{{house.user_avatar}}"></div>
+                    <div class="house-price">￥<span>{{(house.price/100.0).toFixed(0)}}</span>/晚</div>
+                    <div class="house-intro">
+                        <span class="house-title">{{house.title}}</span>
+                        <em>出租{{house.room_count}}间 - {{house.order_count}}次入住 - {{house.address}}</em>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </script>
         <div class="footer">
             <p><span><i class="fa fa-copyright"></i></span>爱家租房&nbsp;&nbsp;享受家的温馨</p>
         </div>
