@@ -6,4 +6,4 @@ api  = Blueprint('api_1', __name__)
 
 
 # 导入蓝图的视图函数
-from . import demo, verify_code, passport, profile, houses, orders
+from . import  verify_code, passport, profile, houses, orders, pay

@@ -1421,3 +1421,1670 @@ INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:48] "[37mGET /api/v1/hou
 INFO houses.py:23 hit redis area_info
 INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:48] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
 INFO _internal.py:113 127.0.0.1 - - [04/Mar/2020 21:57:48] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1890 Exception on /static/plugins/bootstrap/css/bootstrap.min.css [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:29] "[35m[1mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /static/plugins/font-awesome/css/font-awesome.min.css [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:29] "[35m[1mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /static/css/reset.css [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:29] "[35m[1mGET /static/css/reset.css HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /static/plugins/swiper/css/swiper.min.css [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:29] "[35m[1mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:29] "[35m[1mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /static/css/ihome/main.css [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:29] "[35m[1mGET /static/css/ihome/main.css HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /static/css/ihome/index.css [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:29] "[35m[1mGET /static/css/ihome/index.css HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /static/plugins/swiper/js/maps/swiper.jquery.min.js.map [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:29] "[35m[1mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /my.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:31] "[35m[1mGET /my.html HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /my.html [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:36] "[35m[1mGET /my.html HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /static/plugins/swiper/js/maps/swiper.jquery.min.js.map [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:38] "[35m[1mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+ERROR app.py:1890 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2445, in wsgi_app
+    ctx.push()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/ctx.py", line 390, in push
+    self.session = session_interface.open_session(self.app, self.request)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 132, in open_session
+    val = self.redis.get(self.key_prefix + sid)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 1579, in get
+    return self.execute_command('GET', name)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask_session/sessions.py", line 145, in save_session
+    if session.modified:
+AttributeError: 'NoneType' object has no attribute 'modified'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:05:50] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET / HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/swiper/css/swiper.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/css/ihome/index.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/swiper/js/swiper.jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/js/ihome/index.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/images/logo@128x59.png HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:23] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:24] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:24] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:24] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:24] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:24] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:25] "[37mGET /login.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:25] "[37mGET /static/css/ihome/login.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:25] "[37mGET /static/js/ihome/login.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:32] "[37mPOST /api/v1/sessions HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:33] "[37mGET /api/v1/session HTTP/1.1[0m" 200 -
+INFO houses.py:243 hit house index info redis
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:33] "[37mGET /api/v1/houses/index HTTP/1.1[0m" 200 -
+INFO houses.py:23 hit redis area_info
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:33] "[37mGET /api/v1/areas HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:33] "[33mGET /static/plugins/swiper/js/maps/swiper.jquery.min.js.map HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:34] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:35] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:35] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:35] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:36] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:36] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:36] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:07:36] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 27, in order_pay
+    alipay_client = AliPay(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 90, in __init__
+    self._load_key()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 95, in _load_key
+    self._app_private_key = RSA.importKey(content)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/PublicKey/RSA.py", line 748, in import_key
+    extern_key = tobytes(extern_key)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/Util/py3compat.py", line 127, in tobytes
+    return s.encode(encoding)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 36-39: ordinal not in range(256)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:10:01] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 27, in order_pay
+    alipay_client = AliPay(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 90, in __init__
+    self._load_key()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 95, in _load_key
+    self._app_private_key = RSA.importKey(content)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/PublicKey/RSA.py", line 781, in import_key
+    raise ValueError("RSA key format is not supported")
+ValueError: RSA key format is not supported
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:15:26] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 28, in order_pay
+    app_private_key_string = open(os.path.join(os.path.dirname(__file__), "keys/app_private_key.pem")).read()
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/keys/app_private_key.pem'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:15] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:23] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 28, in order_pay
+    app_private_key_string = open(os.path.join(os.path.dirname(__file__), "keys/app_private_key.pem")).read()
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/keys/app_private_key.pem'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:32:25] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:33:50] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:37:25] "[33mGET /api/v1/orders/payment HTTP/1.1[0m" 404 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:37:55] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:38:08] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 15, in order_pay
+    user_id = g.user_id
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/werkzeug/local.py", line 347, in __getattr__
+    return getattr(self._get_current_object(), name)
+AttributeError: '_AppCtxGlobals' object has no attribute 'user_id'
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:38:18] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:46] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:47] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:47] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:48] "[36mGET /orders.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:48] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:49] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:41:51] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:45:35] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:47:55] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:55:26] "[36mGET /orders.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:55:26] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:55:26] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 30, in order_pay
+    alipay_client = AliPay(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 90, in __init__
+    self._load_key()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 95, in _load_key
+    self._app_private_key = RSA.importKey(content)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/PublicKey/RSA.py", line 748, in import_key
+    extern_key = tobytes(extern_key)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/Util/py3compat.py", line 127, in tobytes
+    return s.encode(encoding)
+UnicodeEncodeError: 'latin-1' codec can't encode characters in position 36-39: ordinal not in range(256)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:55:28] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:25] "[37mGET /my.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:25] "[37mGET /static/css/ihome/my.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:25] "[37mGET /static/js/ihome/my.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:25] "[37mGET /api/v1/users HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:27] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:33] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 30, in order_pay
+    alipay_client = AliPay(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 90, in __init__
+    self._load_key()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 95, in _load_key
+    self._app_private_key = RSA.importKey(content)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/PublicKey/RSA.py", line 781, in import_key
+    raise ValueError("RSA key format is not supported")
+ValueError: RSA key format is not supported
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:57:35] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:59:02] "[36mGET /orders.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:59:02] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:59:02] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 30, in order_pay
+    alipay_client = AliPay(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 90, in __init__
+    self._load_key()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 95, in _load_key
+    self._app_private_key = RSA.importKey(content)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/PublicKey/RSA.py", line 781, in import_key
+    raise ValueError("RSA key format is not supported")
+ValueError: RSA key format is not supported
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:59:03] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:59:30] "[36mGET /orders.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:59:30] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:59:30] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 14:59:31] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:10] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+ERROR app.py:1890 Exception on /api/v1/orders/1/payment [POST]
+Traceback (most recent call last):
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1951, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1820, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/_compat.py", line 39, in reraise
+    raise value
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1949, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/flask/app.py", line 1935, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/utils/commons.py", line 27, in wrapper
+    return view_func(*args, **kwargs)
+  File "/Users/zhengyuchuan/PycharmProjects/爱家租房/ihome/api_1/pay.py", line 39, in order_pay
+    order_string = alipay_client.api_alipay_trade_wap_pay(
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 227, in api_alipay_trade_wap_pay
+    return self.sign_data(data)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 170, in sign_data
+    sign = self._sign(unsigned_string)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/alipay/__init__.py", line 125, in _sign
+    signature = signer.sign(SHA256.new(unsigned_string.encode()))
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/Signature/pkcs1_15.py", line 81, in sign
+    m_int = self._key._decrypt(em_int)
+  File "/usr/local/opt/python@3.8/Frameworks/Python.framework/Versions/3.8/lib/python3.8/site-packages/Cryptodome/PublicKey/RSA.py", line 150, in _decrypt
+    raise TypeError("This is not a private key")
+TypeError: This is not a private key
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:02:12] "[35m[1mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 500 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /orders.html HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/plugins/font-awesome/css/font-awesome.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/css/reset.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/plugins/bootstrap-datepicker/css/bootstrap-datepicker.min.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/css/ihome/main.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/css/ihome/orders.css HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/js/jquery.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/plugins/bootstrap/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/plugins/bootstrap-datepicker/js/bootstrap-datepicker.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/plugins/bootstrap-datepicker/locales/bootstrap-datepicker.zh-CN.min.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/js/template.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/js/ihome/orders.js HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/plugins/bootstrap/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /static/plugins/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:37] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:03:38] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:05:32] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:06:50] "[36mGET /orders.html HTTP/1.1[0m" 304 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:06:50] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:06:50] "[37mGET /favicon.ico HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:06:51] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:07:39] "[37mPOST /api/v1/orders/1/payment HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:11:35] "[37mGET /orders.html?charset=utf-8&out_trade_no=1&method=alipay.trade.wap.pay.return&total_amount=199.00&sign=iFrKm0Sf5XBbVhCaggxBYX3PLA32osLvvZ72ymcjKTCwxaGHrlCpg%2FczJUC2bme%2B65IjYDfvMScCWSMuldIVsXj9goYAAQyG1YryWNYD1zK%2Fwvxf00QQnLtgRnOTLIp0f5flGIDRVqug8cJ9O1aSsWaFVNnzWwnkTadkA6K1I7F%2FpPQW0ibWe7j1EZ0HzbuZQR1YLn43Zp1tLZIMfp0elHxjtPwJOQ7neqbYYGwfhClcTvsiOLnKhX7W8L3QKP7esiwhfwbI%2Br9QhayMgcXznRYQY85XamYpJnofL2CwqDof2Uf7CstPrh1BlrsD8yCqy5vhDRLzs%2FA1rrYshcfKwQ%3D%3D&trade_no=2020030522001406320500852072&auth_app_id=2016101400686425&version=1.0&app_id=2016101400686425&sign_type=RSA2&seller_id=2088102179573894&timestamp=2020-03-05+15%3A11%3A33 HTTP/1.1[0m" 200 -
+INFO _internal.py:113 127.0.0.1 - - [05/Mar/2020 15:11:36] "[37mGET /api/v1/user/orders?role=custom HTTP/1.1[0m" 200 -
+INFO _internal.py:113  * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+ERROR app.py:1890 Exception on / [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1890 Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+ERROR app.py:1974 Request finalizing failed with an error while handling an error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2446, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1952, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 552, in connect
+    sock = self._connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 609, in _connect
+    raise err
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 597, in _connect
+    sock.connect(socket_address)
+ConnectionRefusedError: [Errno 61] Connection refused
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 1969, in finalize_request
+    response = self.process_response(response)
+  File "/usr/local/lib/python3.8/site-packages/flask/app.py", line 2268, in process_response
+    self.session_interface.save_session(self, ctx.session, response)
+  File "/usr/local/lib/python3.8/site-packages/flask_session/sessions.py", line 165, in save_session
+    self.redis.setex(name=self.key_prefix + session.sid, value=val,
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 1787, in setex
+    return self.execute_command('SETEX', name, time, value)
+  File "/usr/local/lib/python3.8/site-packages/redis/client.py", line 875, in execute_command
+    conn = self.connection or pool.get_connection(command_name, **options)
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 1185, in get_connection
+    connection.connect()
+  File "/usr/local/lib/python3.8/site-packages/redis/connection.py", line 557, in connect
+    raise ConnectionError(self._error_message(e))
+redis.exceptions.ConnectionError: Error 61 connecting to 127.0.0.1:6379. Connection refused.
+INFO houses.py:243 hit house index info redis
+INFO houses.py:23 hit redis area_info
+INFO houses.py:243 hit house index info redis
+INFO houses.py:23 hit redis area_info
+INFO houses.py:23 hit redis area_info
+INFO houses.py:243 hit house index info redis
+INFO houses.py:243 hit house index info redis
+INFO houses.py:23 hit redis area_info
+INFO houses.py:23 hit redis area_info
+INFO houses.py:23 hit redis area_info
+INFO houses.py:23 hit redis area_info
+INFO houses.py:243 hit house index info redis
+INFO houses.py:243 hit house index info redis
+INFO houses.py:23 hit redis area_info
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO houses.py:243 hit house index info redis
+INFO houses.py:23 hit redis area_info
+INFO houses.py:23 hit redis area_info
+INFO houses.py:23 hit redis area_info
+INFO houses.py:243 hit house index info redis
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO houses.py:243 hit house index info redis
+INFO houses.py:23 hit redis area_info
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
+INFO csrf.py:258 The CSRF token is missing.
