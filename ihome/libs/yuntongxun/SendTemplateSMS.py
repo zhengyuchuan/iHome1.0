@@ -68,5 +68,5 @@ class CCP(object):
 
 if __name__ == "__main__":
     ccp = CCP()
-    res = ccp.sendTemplateSMS("15698208195", ["1234", "5"], 1)
+    res = ccp.sendTemplateSMS("注册容联云使用的手机号", ["1234", "5"], 1)
     print(res)
