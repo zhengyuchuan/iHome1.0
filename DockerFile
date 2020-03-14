@@ -1,0 +1,11 @@
+FROM python:3.8
+WORKDIR /usr/ihome
+COPY 爱家租房 /usr/ihome
+RUN pip install -y 爱家租房/requirements.txt
+EXPOSE 5000
+CMD cd 爱家租房
+CMD python manage.py db init
+CMD python manage.py db migrate
+CMD celery -A ihome.tasks.task_sms worker
+CMD gunicorn -w 4 manage:app
+
