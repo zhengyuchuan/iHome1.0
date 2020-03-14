@@ -1,8 +1,0 @@
-FROM python:3.8
-WORKDIR /usr/ihome
-COPY 爱家租房 /usr/ihome
-RUN pip install -y 爱家租房/requirements.txt
-EXPOSE 5000
-ENV worker 4
-ENTRYPOINT [./entrypoint.sh]
-

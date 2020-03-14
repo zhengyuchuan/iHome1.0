@@ -21,8 +21,8 @@
 
 ### 2.第三方SDK支持
 
-- 容联云通讯：用于注册短信通知，项目中使用的是测试版，上线使用需购买。项目启动前需要自行去容联云通讯注册账号，然后到[SendTemplateSMS](https://github.com/zhengyuchuan/iHome1.0/blob/master/ihome/libs/yuntongxun/SendTemplateSMS.py)文件中用自己的账号id、token、应用id替换下图中标红的部分[SendTemplateSMS](http://q6gtmshh2.bkt.clouddn.com/uPic/截屏2020-03-09下午10.14.55.png)
-- 七牛云：项目启动后，用户上传的图片不是保存在本地，而是保存在七牛云中，所以需要自行注册七牛云账号。然后到[image_storage](https://github.com/zhengyuchuan/iHome1.0/blob/master/ihome/utils/image_storage.py)文件中替换成自己的access key、secret key。[image_storage](http://q6gtmshh2.bkt.clouddn.com/uPic/截屏2020-03-09下午10.28.16.png)
+- 容联云通讯：用于注册短信通知，项目中使用的是测试版，上线使用需购买。项目启动前需要自行去容联云通讯注册账号，然后到[SendTemplateSMS](https://github.com/zhengyuchuan/iHome1.0/blob/master/ihome/libs/yuntongxun/SendTemplateSMS.py)文件中用自己的账号id、token、应用id替换下图中标红的部分![alt SendTemplateSMS](http://q6gtmshh2.bkt.clouddn.com/uPic/截屏2020-03-09下午10.14.55.png)
+- 七牛云：项目启动后，用户上传的图片不是保存在本地，而是保存在七牛云中，所以需要自行注册七牛云账号。然后到[image_storage](https://github.com/zhengyuchuan/iHome1.0/blob/master/ihome/utils/image_storage.py)文件中替换成自己的access key、secret key。![alt image_storage](http://q6gtmshh2.bkt.clouddn.com/uPic/截屏2020-03-09下午10.28.16.png)
 - 支付宝：这里使用的是支付宝的沙箱环境，仅用于测试，用户可以随意设置金额，用起来很爽。使用之前，需要先使用openSSL工具生成密钥对，将自己生成的公钥填入支付宝沙箱中的应用公钥。然后将生成的私钥和支付宝的公钥，放到[app_private_key](https://github.com/zhengyuchuan/iHome1.0/blob/master/ihome/api_1/Alipay_keys/app_private_key.pem)与[alipay_public_key](https://github.com/zhengyuchuan/iHome1.0/blob/master/ihome/api_1/Alipay_keys/alipay_public_key.pem)两个文件中。
 
 
@@ -66,7 +66,7 @@
 
 - 需要到[config.py](https://github.com/zhengyuchuan/iHome1.0/blob/master/config.py)中配置自己的数据库连接信息。
 
-  [config.py中配置信息](http://q6gtmshh2.bkt.clouddn.com/uPic/截屏2020-03-09下午11.03.58.png)
+  ![alt config.py中配置信息](http://q6gtmshh2.bkt.clouddn.com/uPic/截屏2020-03-09下午11.03.58.png)
 
 
 
@@ -76,7 +76,7 @@
 
 在[constants.py](https://github.com/zhengyuchuan/iHome1.0/blob/master/ihome/constants.py)中配置了一些参数，这些参数可根据需要自行修改。
 
-[constants](http://q6gtmshh2.bkt.clouddn.com/uPic/截屏2020-03-10上午8.33.18.png)
+![alt constants](http://q6gtmshh2.bkt.clouddn.com/uPic/截屏2020-03-10上午8.33.18.png)
 
 
 
@@ -112,7 +112,29 @@
   gunicorn -w 4 -b 192.168.1.4:8001 manage:app
   ```
 
+
+
+
+### 7.Dockerfile
+
+- 使用[Dockerfile](https://github.com/zhengyuchuan/iHome1.0/blob/master/Dockerfile)前，确保mysql、redis均以开启，并且项目中相应的配置文件均已修改正确。
+
+- 1.首先将Dockerfile文件移动至爱家租房项目的同级目录中。
+
+- 2.制作docker镜像：
+
+  ```shell
+  docker build -f ihome .
+  ```
+
+- 3.启动docker
+
+  ```shell
+  docker run -it --name ihome_contrainer -p 5000:5000 -v xxx/logs/log:/ihome/logs/log ihome
+  ```
+
   
+
 
 ---
 
